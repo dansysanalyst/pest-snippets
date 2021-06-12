@@ -1,0 +1,234 @@
+{
+  "PestExpect": {
+    "prefix": ":pex",
+    "body": ["    //expect(${1:})->\n"],
+    "description": "Pest expect()"
+  },
+  "PestExpectToBe": {
+    "prefix": ":pextobe",
+    "body": ["    expect(${1:})->toBe(${2:});\n"],
+    "description": "Pest expect()->toBe"
+  },
+  "PestExpectToBeEmpty": {
+    "prefix": ":pextobeempty",
+    "body": ["    expect(${1:})->toBeEmpty(${2:});\n"],
+    "description": "Pest expect()->toBeEmpty"
+  },
+  "PestExpectToBeTrue": {
+    "prefix": ":pextobetrue",
+    "body": ["    expect(${1:})->toBeTrue(${2:});\n"],
+    "description": "Pest expect()->toBeTrue"
+  },
+  "PestExpectToBeFalse": {
+    "prefix": ":pextobefalse",
+    "body": ["    expect(${1:})->toBeFalse(${2:});\n"],
+    "description": "Pest expect()->toBeFalse"
+  },
+  "PestExpectToBeGreaterThan": {
+    "prefix": ":pextobegreaterthan",
+    "body": ["    expect(${1:})->toBeGreaterThan(${2:});\n"],
+    "description": "Pest expect()->toBeGreaterThan"
+  },
+  "PestExpectToBeGreaterThanOrEqual": {
+    "prefix": ":pextobegreaterthanorequal",
+    "body": ["    expect(${1:})->toBeGreaterThanOrEqual(${2:});\n"],
+    "description": "Pest expect()->toBeGreaterThanOrEqual"
+  },
+  "PestExpectToBeLessThan": {
+    "prefix": ":pextobelessthan",
+    "body": ["    expect(${1:})->toBeLessThan(${2:});\n"],
+    "description": "Pest expect()->toBeLessThan"
+  },
+  "PestExpectToBeLessThanOrEqual": {
+    "prefix": ":pextobelessthanorequal",
+    "body": ["    expect(${1:})->toBeLessThanOrEqual(${2:});\n"],
+    "description": "Pest expect()->toBeLessThanOrEqual"
+  },
+  "PestExpectToContain": {
+    "prefix": ":pextocontain",
+    "body": ["    expect(${1:})->toContain(${2:});\n"],
+    "description": "Pest expect()->toContain"
+  },
+  "PestExpectToHaveCount": {
+    "prefix": ":pextohavecount",
+    "body": ["    expect(${1:})->toHaveCount(${2:});\n"],
+    "description": "Pest expect()->toHaveCount"
+  },
+  "PestExpectToHaveProperty": {
+    "prefix": ":pextohaveproperty",
+    "body": ["    expect(${1:})->toHaveProperty(${2:});\n"],
+    "description": "Pest expect()->toHaveProperty"
+  },
+  "PestExpectToMatchArray": {
+    "prefix": ":pextomatcharray",
+    "body": ["    expect(${1:})->toMatchArray(${2:});\n"],
+    "description": "Pest expect()->toMatchArray"
+  },
+  "PestExpectToMatchObject": {
+    "prefix": ":pextomatchobject",
+    "body": ["    expect(${1:})->toMatchObject(${2:});\n"],
+    "description": "Pest expect()->toMatchObject"
+  },
+  "PestExpectToEqual": {
+    "prefix": ":pextoequal",
+    "body": ["    expect(${1:})->toEqual(${2:});\n"],
+    "description": "Pest expect()->toEqual"
+  },
+  "PestExpectToEqualCanonicalizing": {
+    "prefix": ":pextoequalcanonicalizing",
+    "body": ["    expect(${1:})->toEqualCanonicalizing(${2:});\n"],
+    "description": "Pest expect()->toEqualCanonicalizing"
+  },
+  "PestExpectToEqualWithDelta": {
+    "prefix": ":pextoequalwithdelta",
+    "body": ["    expect(${1:})->toEqualWithDelta(${2:});\n"],
+    "description": "Pest expect()->toEqualWithDelta"
+  },
+  "PestExpectToBeInfinite": {
+    "prefix": ":pextobeinfinite",
+    "body": ["    expect(${1:})->toBeInfinite(${2:});\n"],
+    "description": "Pest expect()->toBeInfinite"
+  },
+  "PestExpectToBeInstanceOf": {
+    "prefix": ":pextobeinstanceof",
+    "body": ["    expect(${1:})->toBeInstanceOf(${2:});\n"],
+    "description": "Pest expect()->toBeInstanceOf"
+  },
+  "PestExpectToBeBool": {
+    "prefix": ":pextobebool",
+    "body": ["    expect(${1:})->toBeBool(${2:});\n"],
+    "description": "Pest expect()->toBeBool"
+  },
+  "PestExpectToBeCallable": {
+    "prefix": ":pextobecallable",
+    "body": ["    expect(${1:})->toBeCallable(${2:});\n"],
+    "description": "Pest expect()->toBeCallable"
+  },
+  "PestExpectToBeFloat": {
+    "prefix": ":pextobefloat",
+    "body": ["    expect(${1:})->toBeFloat(${2:});\n"],
+    "description": "Pest expect()->toBeFloat"
+  },
+  "PestExpectToBeInt": {
+    "prefix": ":pextobeint",
+    "body": ["    expect(${1:})->toBeInt(${2:});\n"],
+    "description": "Pest expect()->toBeInt"
+  },
+  "PestExpectToBeIterable": {
+    "prefix": ":pextobeiterable",
+    "body": ["    expect(${1:})->toBeIterable(${2:});\n"],
+    "description": "Pest expect()->toBeIterable"
+  },
+  "PestExpectToBeNumeric": {
+    "prefix": ":pextobenumeric",
+    "body": ["    expect(${1:})->toBeNumeric(${2:});\n"],
+    "description": "Pest expect()->toBeNumeric"
+  },
+  "PestExpectToBeObject": {
+    "prefix": ":pextobeobject",
+    "body": ["    expect(${1:})->toBeObject(${2:});\n"],
+    "description": "Pest expect()->toBeObject"
+  },
+  "PestExpectToBeResource": {
+    "prefix": ":pextoberesource",
+    "body": ["    expect(${1:})->toBeResource(${2:});\n"],
+    "description": "Pest expect()->toBeResource"
+  },
+  "PestExpectToBeScalar": {
+    "prefix": ":pextobescalar",
+    "body": ["    expect(${1:})->toBeScalar(${2:});\n"],
+    "description": "Pest expect()->toBeScalar"
+  },
+  "PestExpectToBeString": {
+    "prefix": ":pextobestring",
+    "body": ["    expect(${1:})->toBeString(${2:});\n"],
+    "description": "Pest expect()->toBeString"
+  },
+  "PestExpectToBeJson": {
+    "prefix": ":pextobejson",
+    "body": ["    expect(${1:})->toBeJson(${2:});\n"],
+    "description": "Pest expect()->toBeJson"
+  },
+  "PestExpectToBeNan": {
+    "prefix": ":pextobenan",
+    "body": ["    expect(${1:})->toBeNan(${2:});\n"],
+    "description": "Pest expect()->toBeNan"
+  },
+  "PestExpectToBeNull": {
+    "prefix": ":pextobenull",
+    "body": ["    expect(${1:})->toBeNull(${2:});\n"],
+    "description": "Pest expect()->toBeNull"
+  },
+  "PestExpectToHaveKey": {
+    "prefix": ":pextohavekey",
+    "body": ["    expect(${1:})->toHaveKey(${2:});\n"],
+    "description": "Pest expect()->toHaveKey"
+  },
+  "PestExpectToHaveKeys": {
+    "prefix": ":pextohavekeys",
+    "body": ["    expect(${1:})->toHaveKeys(${2:});\n"],
+    "description": "Pest expect()->toHaveKeys"
+  },
+  "PestExpectToBeReadableDirectory": {
+    "prefix": ":pextobereadabledirectory",
+    "body": ["    expect(${1:})->toBeReadableDirectory(${2:});\n"],
+    "description": "Pest expect()->toBeReadableDirectory"
+  },
+  "PestExpectToBeWritableDirectory": {
+    "prefix": ":pextobewritabledirectory",
+    "body": ["    expect(${1:})->toBeWritableDirectory(${2:});\n"],
+    "description": "Pest expect()->toBeWritableDirectory"
+  },
+  "PestExpectToStartWith": {
+    "prefix": ":pextostartwith",
+    "body": ["    expect(${1:})->toStartWith(${2:});\n"],
+    "description": "Pest expect()->toStartWith"
+  },
+  "PestExpectToEndWith": {
+    "prefix": ":pextoendwith",
+    "body": ["    expect(${1:})->toEndWith(${2:});\n"],
+    "description": "Pest expect()->toEndWith"
+  },
+  "PestExpectToMatch": {
+    "prefix": ":pextomatch",
+    "body": ["    expect(${1:})->toMatch(${2:});\n"],
+    "description": "Pest expect()->PestExpectToMatch"
+  },
+  "PestExpectToMatchConstraint": {
+    "prefix": ":pextomatchconstraint",
+    "body": ["    expect(${1:})->toMatchConstraint(${2:});\n"],
+    "description": "Pest expect()->toMatchConstraint"
+  },
+
+  "PestExpectDd": {
+    "prefix": ":pexdd",
+    "body": ["    expect(${1:})->dd(${2:});\n"],
+    "description": "Pest expect()->dd"
+  },
+  "PestExpectRay": {
+    "prefix": ":pexray",
+    "body": ["    expect(${1:})->ray(${2:});\n"],
+    "description": "Pest expect()->ray"
+  },
+  "PestExpectAnd": {
+    "prefix": ":pexand",
+    "body": ["    ->and(${1:})->\n"],
+    "description": "Pest ->and()->"
+  },
+  "PestExpectNot": {
+    "prefix": ":pexnot",
+    "body": ["    ->not(${1:})->\n"],
+    "description": "Pest ->not()->"
+  },
+  "PestExpectEach": {
+    "prefix": ":pexeach",
+    "body": ["    ->each(${1:})->\n"],
+    "description": "Pest ->each()->"
+  },
+  "PestExpectSequence": {
+    "prefix": ":pexsequence",
+    "body": ["    ->sequence(${1:});\n"],
+    "description": "Pest ->sequence"
+  }
+
+}
