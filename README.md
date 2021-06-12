@@ -2,6 +2,9 @@
 
 Code snippets for writing [Pest PHP](https://pestphp.com/) tests in Visual Studio Code.
 
+![Scrrenshot](https://github.com/dansysanalyst/dansysanalyst/pest-snippets/raw/master/images/screenshot.gif)
+
+
 ## Usage
 
 ### Writing Tests
