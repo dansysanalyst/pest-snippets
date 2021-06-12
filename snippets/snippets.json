@@ -1,5 +1,6 @@
 {
   "PestTestFunction": {
+    "scope": "php",
     "prefix": ":pte",
     "body": [
       "test('${1:}', function () {", "    //expect(${2:})->", "});\n"
@@ -7,6 +8,7 @@
     "description": "Pest test()"
   },
   "PestItFunction": {
+    "scope": "php",
     "prefix": ":pit",
     "body": [
       "it('${1:}', function () {", "    //expect(${2:})->", "});\n"
@@ -14,6 +16,7 @@
     "description": "Pest it()"
   },
   "PestTestFunctionWithSkip": {
+    "scope": "php",
     "prefix": ":ptes",
     "body": [
       "test('${1:}', function () {", "    //expect(${2:})->", "})->skip();\n"
@@ -21,6 +24,7 @@
     "description": "Pest test() with Skip"
   },
   "PestItFunctionWithSkip": {
+    "scope": "php",
     "prefix": ":pits",
     "body": [
       "it('${1:}', function () {", "    //expect(${2:})->", "})->skip();\n"
@@ -28,6 +32,7 @@
     "description": "Pest it() with Skip"
   },
   "PestTestFunctionWithOnly": {
+    "scope": "php",
     "prefix": ":pteo",
     "body": [
       "test('${1:}', function () {", "    //expect(${2:})->", "})->only();\n"
@@ -35,6 +40,7 @@
     "description": "Pest test() with Only"
   },
   "PestItFunctionWithOnly": {
+    "scope": "php",
     "prefix": ":pito",
     "body": [
       "it('${1:}', function () {", "    //expect(${2:})->", "})->only();\n"
@@ -42,6 +48,7 @@
     "description": "Pest it() with Only"
   },
   "PestTestFunctionWithGroup": {
+    "scope": "php",
     "prefix": ":pteg",
     "body": [
       "test('${1:}', function () {", "    //expect(${2:})->", "})->group(${3:});\n"
@@ -49,6 +56,7 @@
     "description": "Pest test() with Group"
   },
   "PestItFunctionWithGroup": {
+    "scope": "php",
     "prefix": ":pitg",
     "body": [
       "it('${1:}', function () {", "    //expect(${2:})->", "})->group(${3:});\n"
@@ -56,6 +64,7 @@
     "description": "Pest it() with Group"
   },
   "PestTestFunctionWithDataset": {
+    "scope": "php",
     "prefix": ":pted",
     "body": [
       "test('${1:}', function () {", "    //expect(${2:})->", "})->with([${3:}]);\n"
@@ -63,6 +72,7 @@
     "description": "Pest test() with Dataset"
   },
   "PestItFunctionWithDataset": {
+    "scope": "php",
     "prefix": ":pitd",
     "body": [
       "it('${1:}', function () {", "    //expect(${2:})->", "})->with([${3:}]);\n"
@@ -70,6 +80,7 @@
     "description": "Pest it() with Dataset"
   },
   "PestTestFunctionWithLazyDataset": {
+    "scope": "php",
     "prefix": ":pteld",
     "body": [
       "test('${1:}', function () {", "    //expect(${2:})->", "})->with(function () {", "    yield '${3:}';", "});\n"
@@ -77,6 +88,7 @@
     "description": "Pest it() with Lazy Dataset"
   },
   "PestItFunctionWithLazyDataset": {
+    "scope": "php",
     "prefix": ":pitld",
     "body": [
       "it('${1:}', function () {", "    //expect(${2:})->", "})->with(function () {", "    yield '${3:}';", "});\n"
@@ -84,6 +96,7 @@
     "description": "Pest it() with Lazy Dataset"
   },
   "PestBeforeEach": {
+    "scope": "php",
     "prefix": ":pbe",
     "body": [
       "beforeEach(function () {", "    //...${1:}", "});\n"
@@ -91,6 +104,7 @@
     "description": "Pest beforeEach()"
   },
   "beforeAll": {
+    "scope": "php",
     "prefix": ":pba",
     "body": [
       "beforeAll(function () {", "    //...${1:}", "});\n"
@@ -98,6 +112,7 @@
     "description": "Pest beforeAll()"
   },
   "afterEach": {
+    "scope": "php",
     "prefix": ":pae",
     "body": [
       "afterEach(function () {", "    //...${1:}", "});\n"
@@ -105,6 +120,7 @@
     "description": "Pest afterEach()"
   },
   "afterAll": {
+    "scope": "php",
     "prefix": ":paa",
     "body": [
       "afterAll(function () {", "    //...${1:}", "});\n"
