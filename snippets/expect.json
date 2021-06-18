@@ -3,324 +3,337 @@
     "scope": "php",
     "prefix": ":pex",
     "body": [
-      "   expect(${1:})->\n"],
+      "expect()"],
     "description": "Pest expect()"
   },
   "PestExpectToBe": {
     "scope": "php",
     "prefix": ":pextobe",
     "body": [
-      "   expect(${1:})->toBe(${2:});\n"],
-    "description": "Pest expect()->toBe"
+      "->toBe(${1:});\n"],
+    "description": "Pest ->toBe()"
   },
   "PestExpectToBeEmpty": {
     "scope": "php",
     "prefix": ":pextobeempty",
     "body": [
-      "   expect(${1:})->toBeEmpty(${2:});\n"],
-    "description": "Pest expect()->toBeEmpty"
+      "->toBeEmpty();\n"],
+    "description": "Pest ->toBeEmpty()"
   },
   "PestExpectToBeTrue": {
     "scope": "php",
     "prefix": ":pextobetrue",
     "body": [
-      "   expect(${1:})->toBeTrue(${2:});\n"],
-    "description": "Pest expect()->toBeTrue"
+      "->toBeTrue();\n"],
+    "description": "Pest ->toBeTrue()"
   },
   "PestExpectToBeFalse": {
     "scope": "php",
     "prefix": ":pextobefalse",
     "body": [
-      "   expect(${1:})->toBeFalse(${2:});\n"],
-    "description": "Pest expect()->toBeFalse"
+      "->toBeFalse();\n"],
+    "description": "Pest ->toBeFalse()"
   },
   "PestExpectToBeGreaterThan": {
     "scope": "php",
     "prefix": ":pextobegreaterthan",
     "body": [
-      "   expect(${1:})->toBeGreaterThan(${2:});\n"],
-    "description": "Pest expect()->toBeGreaterThan"
+      "->toBeGreaterThan(${1:});\n"],
+    "description": "Pest ->toBeGreaterThan()"
   },
   "PestExpectToBeGreaterThanOrEqual": {
     "scope": "php",
     "prefix": ":pextobegreaterthanorequal",
     "body": [
-      "   expect(${1:})->toBeGreaterThanOrEqual(${2:});\n"],
-    "description": "Pest expect()->toBeGreaterThanOrEqual"
+      "->toBeGreaterThanOrEqual(${1:});\n"],
+    "description": "Pest ->toBeGreaterThanOrEqual()"
   },
   "PestExpectToBeLessThan": {
     "scope": "php",
     "prefix": ":pextobelessthan",
     "body": [
-      "   expect(${1:})->toBeLessThan(${2:});\n"],
-    "description": "Pest expect()->toBeLessThan"
+      "->toBeLessThan(${1:});\n"],
+    "description": "Pest ->toBeLessThan()"
   },
   "PestExpectToBeLessThanOrEqual": {
     "scope": "php",
     "prefix": ":pextobelessthanorequal",
     "body": [
-      "   expect(${1:})->toBeLessThanOrEqual(${2:});\n"],
-    "description": "Pest expect()->toBeLessThanOrEqual"
+      "->toBeLessThanOrEqual(${1:});\n"],
+    "description": "Pest ->toBeLessThanOrEqual()"
   },
   "PestExpectToContain": {
     "scope": "php",
     "prefix": ":pextocontain",
     "body": [
-      "   expect(${1:})->toContain(${2:});\n"],
-    "description": "Pest expect()->toContain"
+      "->toContain(${1:});\n"],
+    "description": "Pest ->toContain()"
   },
   "PestExpectToHaveCount": {
     "scope": "php",
     "prefix": ":pextohavecount",
     "body": [
-      "   expect(${1:})->toHaveCount(${2:});\n"],
-    "description": "Pest expect()->toHaveCount"
+      "->toHaveCount(${1:});\n"],
+    "description": "Pest ->toHaveCount()"
   },
   "PestExpectToHaveProperty": {
     "scope": "php",
     "prefix": ":pextohaveproperty",
     "body": [
-      "   expect(${1:})->toHaveProperty(${2:});\n"],
-    "description": "Pest expect()->toHaveProperty"
+      "->toHaveProperty(${1:});\n"],
+    "description": "Pest ->toHaveProperty()"
   },
   "PestExpectToMatchArray": {
     "scope": "php",
     "prefix": ":pextomatcharray",
     "body": [
-      "   expect(${1:})->toMatchArray(${2:});\n"],
-    "description": "Pest expect()->toMatchArray"
+      "->toMatchArray(${1:});\n"],
+    "description": "Pest ->toMatchArray()"
   },
   "PestExpectToMatchObject": {
     "scope": "php",
     "prefix": ":pextomatchobject",
     "body": [
-      "   expect(${1:})->toMatchObject(${2:});\n"],
-    "description": "Pest expect()->toMatchObject"
+      "->toMatchObject(${1:});\n"],
+    "description": "Pest ->toMatchObject()"
   },
   "PestExpectToEqual": {
     "scope": "php",
     "prefix": ":pextoequal",
     "body": [
-      "   expect(${1:})->toEqual(${2:});\n"],
-    "description": "Pest expect()->toEqual"
+      "->toEqual(${1:});\n"],
+    "description": "Pest ->toEqual()"
   },
   "PestExpectToEqualCanonicalizing": {
     "scope": "php",
     "prefix": ":pextoequalcanonicalizing",
     "body": [
-      "   expect(${1:})->toEqualCanonicalizing(${2:});\n"],
-    "description": "Pest expect()->toEqualCanonicalizing"
+      "->toEqualCanonicalizing(${1:});\n"],
+    "description": "Pest ->toEqualCanonicalizing()"
   },
   "PestExpectToEqualWithDelta": {
     "scope": "php",
     "prefix": ":pextoequalwithdelta",
     "body": [
-      "   expect(${1:})->toEqualWithDelta(${2:});\n"],
-    "description": "Pest expect()->toEqualWithDelta"
+      "->toEqualWithDelta(${1:});\n"],
+    "description": "Pest ->toEqualWithDelta()"
   },
   "PestExpectToBeInfinite": {
     "scope": "php",
     "prefix": ":pextobeinfinite",
     "body": [
-      "   expect(${1:})->toBeInfinite(${2:});\n"],
-    "description": "Pest expect()->toBeInfinite"
+      "->toBeInfinite();\n"],
+    "description": "Pest ->toBeInfinite()"
   },
   "PestExpectToBeInstanceOf": {
     "scope": "php",
     "prefix": ":pextobeinstanceof",
     "body": [
-      "   expect(${1:})->toBeInstanceOf(${2:});\n"],
-    "description": "Pest expect()->toBeInstanceOf"
+      "->toBeInstanceOf(${1:});\n"],
+    "description": "Pest ->toBeInstanceOf()"
   },
   "PestExpectToBeBool": {
     "scope": "php",
     "prefix": ":pextobebool",
     "body": [
-      "   expect(${1:})->toBeBool(${2:});\n"],
-    "description": "Pest expect()->toBeBool"
+      "->toBeBool();\n"],
+    "description": "Pest ->toBeBool()"
   },
   "PestExpectToBeCallable": {
     "scope": "php",
     "prefix": ":pextobecallable",
     "body": [
-      "   expect(${1:})->toBeCallable(${2:});\n"],
-    "description": "Pest expect()->toBeCallable"
+      "->toBeCallable();\n"],
+    "description": "Pest ->toBeCallable()"
   },
   "PestExpectToBeFloat": {
     "scope": "php",
     "prefix": ":pextobefloat",
     "body": [
-      "   expect(${1:})->toBeFloat(${2:});\n"],
-    "description": "Pest expect()->toBeFloat"
+      "->toBeFloat();\n"],
+    "description": "Pest ->toBeFloat()"
   },
   "PestExpectToBeInt": {
     "scope": "php",
     "prefix": ":pextobeint",
     "body": [
-      "   expect(${1:})->toBeInt(${2:});\n"],
-    "description": "Pest expect()->toBeInt"
+      "->toBeInt();\n"],
+    "description": "Pest ->toBeInt()"
   },
   "PestExpectToBeIterable": {
     "scope": "php",
     "prefix": ":pextobeiterable",
     "body": [
-      "   expect(${1:})->toBeIterable(${2:});\n"],
-    "description": "Pest expect()->toBeIterable"
+      "->toBeIterable();\n"],
+    "description": "Pest ->toBeIterable()"
   },
   "PestExpectToBeNumeric": {
     "scope": "php",
     "prefix": ":pextobenumeric",
     "body": [
-      "   expect(${1:})->toBeNumeric(${2:});\n"],
-    "description": "Pest expect()->toBeNumeric"
+      "->toBeNumeric();\n"],
+    "description": "Pest ->toBeNumeric()"
   },
   "PestExpectToBeObject": {
     "scope": "php",
     "prefix": ":pextobeobject",
     "body": [
-      "   expect(${1:})->toBeObject(${2:});\n"],
-    "description": "Pest expect()->toBeObject"
+      "->toBeObject();\n"],
+    "description": "Pest ->toBeObject()"
   },
   "PestExpectToBeResource": {
     "scope": "php",
     "prefix": ":pextoberesource",
     "body": [
-      "   expect(${1:})->toBeResource(${2:});\n"],
-    "description": "Pest expect()->toBeResource"
+      "->toBeResource();\n"],
+    "description": "Pest ->toBeResource()"
   },
   "PestExpectToBeScalar": {
     "scope": "php",
     "prefix": ":pextobescalar",
     "body": [
-      "   expect(${1:})->toBeScalar(${2:});\n"],
-    "description": "Pest expect()->toBeScalar"
+      "->toBeScalar();\n"],
+    "description": "Pest ->toBeScalar()"
   },
   "PestExpectToBeString": {
     "scope": "php",
     "prefix": ":pextobestring",
     "body": [
-      "   expect(${1:})->toBeString(${2:});\n"],
-    "description": "Pest expect()->toBeString"
+      "->toBeString();\n"],
+    "description": "Pest ->toBeString()"
   },
   "PestExpectToBeJson": {
     "scope": "php",
     "prefix": ":pextobejson",
     "body": [
-      "   expect(${1:})->toBeJson(${2:});\n"],
-    "description": "Pest expect()->toBeJson"
+      "->toBeJson();\n"],
+    "description": "Pest ->toBeJson()"
   },
   "PestExpectToBeNan": {
     "scope": "php",
     "prefix": ":pextobenan",
     "body": [
-      "   expect(${1:})->toBeNan(${2:});\n"],
-    "description": "Pest expect()->toBeNan"
+      "->toBeNan();\n"],
+    "description": "Pest ->toBeNan()"
   },
   "PestExpectToBeNull": {
     "scope": "php",
     "prefix": ":pextobenull",
     "body": [
-      "   expect(${1:})->toBeNull(${2:});\n"],
-    "description": "Pest expect()->toBeNull"
+      "->toBeNull();\n"],
+    "description": "Pest ->toBeNull()"
   },
   "PestExpectToHaveKey": {
     "scope": "php",
     "prefix": ":pextohavekey",
     "body": [
-      "   expect(${1:})->toHaveKey(${2:});\n"],
-    "description": "Pest expect()->toHaveKey"
+      "->toHaveKey(${1:});\n"],
+    "description": "Pest ->toHaveKey()"
   },
   "PestExpectToHaveKeys": {
     "scope": "php",
     "prefix": ":pextohavekeys",
     "body": [
-      "   expect(${1:})->toHaveKeys(${2:});\n"],
-    "description": "Pest expect()->toHaveKeys"
+      "->toHaveKeys(${1:});\n"],
+    "description": "Pest ->toHaveKeys()"
+  },
+  "PestExpectToBeDirectory": {
+    "scope": "php",
+    "prefix": ":pextobedirectory",
+    "body": [
+      "->toBeDirectory();\n"],
+    "description": "Pest ->toBeDirectory"
   },
   "PestExpectToBeReadableDirectory": {
     "scope": "php",
     "prefix": ":pextobereadabledirectory",
     "body": [
-      "   expect(${1:})->toBeReadableDirectory(${2:});\n"],
-    "description": "Pest expect()->toBeReadableDirectory"
+      "->toBeReadableDirectory();\n"],
+    "description": "Pest ->toBeReadableDirectory"
   },
   "PestExpectToBeWritableDirectory": {
     "scope": "php",
     "prefix": ":pextobewritabledirectory",
     "body": [
-      "   expect(${1:})->toBeWritableDirectory(${2:});\n"],
-    "description": "Pest expect()->toBeWritableDirectory"
+      "->toBeWritableDirectory();\n"],
+    "description": "Pest ->toBeWritableDirectory()"
   },
   "PestExpectToStartWith": {
     "scope": "php",
     "prefix": ":pextostartwith",
     "body": [
-      "   expect(${1:})->toStartWith(${2:});\n"],
-    "description": "Pest expect()->toStartWith"
+      "->toStartWith(${1:});\n"],
+    "description": "Pest ->toStartWith()"
   },
   "PestExpectToEndWith": {
     "scope": "php",
     "prefix": ":pextoendwith",
     "body": [
-      "   expect(${1:})->toEndWith(${2:});\n"],
-    "description": "Pest expect()->toEndWith"
+      "->toEndWith(${1:});\n"],
+    "description": "Pest ->toEndWith()"
   },
   "PestExpectToMatch": {
     "scope": "php",
     "prefix": ":pextomatch",
     "body": [
-      "   expect(${1:})->toMatch(${2:});\n"],
-    "description": "Pest expect()->PestExpectToMatch"
+      "->toMatch(${1:});\n"],
+    "description": "Pest ->toMatch()"
   },
   "PestExpectToMatchConstraint": {
     "scope": "php",
     "prefix": ":pextomatchconstraint",
     "body": [
-      "   expect(${1:})->toMatchConstraint(${2:});\n"],
-    "description": "Pest expect()->toMatchConstraint"
+      "->toMatchConstraint(${1:});\n"],
+    "description": "Pest ->toMatchConstraint()"
   },
-
+  "PestExpectJson": {
+    "scope": "php",
+    "prefix": ":pexjson",
+    "body": [
+      "->json()->\n"],
+    "description": "Pest ->json()->"
+  },
   "PestExpectDd": {
     "scope": "php",
     "prefix": ":pexdd",
     "body": [
-      "   expect(${1:})->dd(${2:});\n"],
-    "description": "Pest expect()->dd"
+      "->dd();\n"],
+    "description": "Pest ->dd()"
   },
   "PestExpectRay": {
     "scope": "php",
     "prefix": ":pexray",
     "body": [
-      "   expect(${1:})->ray(${2:});\n"],
-    "description": "Pest expect()->ray"
+      "->ray();\n"],
+    "description": "Pest ->ray()"
   },
   "PestExpectAnd": {
     "scope": "php",
     "prefix": ":pexand",
     "body": [
-      "   ->and(${1:})->\n"],
+      "->and(${1:})->\n"],
     "description": "Pest ->and()->"
   },
   "PestExpectNot": {
     "scope": "php",
     "prefix": ":pexnot",
     "body": [
-      "   ->not(${1:})->\n"],
-    "description": "Pest ->not()->"
+      "->not->\n"],
+    "description": "Pest ->not->"
   },
   "PestExpectEach": {
     "scope": "php",
     "prefix": ":pexeach",
     "body": [
-      "   ->each(${1:})->\n"],
+      "->each(${1:})->\n"],
     "description": "Pest ->each()->"
   },
   "PestExpectSequence": {
     "scope": "php",
     "prefix": ":pexsequence",
     "body": [
-      "   ->sequence(${1:});\n"],
-    "description": "Pest ->sequence"
+      "->sequence(${1:});\n"],
+    "description": "Pest ->sequence()"
   }
 
 }

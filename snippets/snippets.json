@@ -31,6 +31,22 @@
     ],
     "description": "Pest it() with Skip"
   },
+  "PestTestFunctionWithSkipWip": {
+    "scope": "php",
+    "prefix": ":ptewip",
+    "body": [
+      "test('${1:}', function () {", "    //expect(${2:})->", "})->skip('wip');\n"
+    ],
+    "description": "Pest test() with Skip('wip')"
+  },
+  "PestItFunctionWithSkipWip": {
+    "scope": "php",
+    "prefix": ":pitwip",
+    "body": [
+      "it('${1:}', function () {", "    //expect(${2:})->", "})->skip('wip');\n"
+    ],
+    "description": "Pest it() with Skip('wip')"
+  },
   "PestTestFunctionWithOnly": {
     "scope": "php",
     "prefix": ":pteo",

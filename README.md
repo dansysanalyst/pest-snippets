@@ -14,7 +14,7 @@ Type `:pte` + [TAB] for:
 
 ```php
 test('', function () {
-  //..
+  //expect()->
 });
 ```
 
@@ -22,7 +22,7 @@ Type `:pit` + [TAB] for:
 
 ```php
 it('', function () {
-  //..
+  //expect()->
 });
 ```
 
@@ -34,6 +34,26 @@ Type `:ptes` / `:pits` for the desired function with `skip()`:
 test('', function () {
   //..
 })->skip();
+```
+
+Type `:pteo` / `:pito` + [TAB] for the desired function with `only()`:
+
+```php
+test('', function () {
+  //..
+})->only();
+```
+
+#### Skipping tests (wip)
+
+`wip` stands for "Work In Progress".
+ 
+Type `:ptewip` / `:pitwip` for the desired function with `skip('wip')`:
+
+```php
+test('', function () {
+  //..
+})->skip('wip');
 ```
 
 Type `:pteo` / `:pito` + [TAB] for the desired function with `only()`:
@@ -113,63 +133,72 @@ afterAll(function () {
 Type `:pex` + [TAB] for:
 
 ```php
-  expect()->
+  expect()
 ```
 
-Start typing  `:pex` and complete with your desired `expect()` method.
+Continue typing `:pex` and complete with your desired `expect()` method.
 
-
-Example: Type `pex:tobe` + [TAB] produces:
+For example, `:pextobe` + [TAB] produces:
 
 ```php
- expect()->toBe()
+->toBe()
 ```
+
+All together:
+
+```php
+  expect()->toBe()
+```
+
 
 Available `expect()` methods:
 
 | Trigger  | Snippet          |
 | -------- | ---------------- |
-| :pextobe | expect()->toBe() |
-| :pextobeempty | expect()->toBeEmpty() |
-| :pextobetrue | expect()->toBeTrue() |
-| :pextobefalse | expect()->toBeFalse() |
-| :pextobegreaterthan | expect()->toBeGreaterThan() |
-| :pextobegreaterthanorequal | expect()->toBeGreaterThanOrEqual() |
-| :pextobelessthan | expect()->toBeLessThan() |
-| :pextobelessthanorequal | expect()->toBeLessThanOrEqual() |
-| :pextocontain | expect()->toContain() |
-| :pextohavecount | expect()->toHaveCount() |
-| :pextohaveproperty | expect()->toHaveProperty() |
-| :pextomatcharray | expect()->toMatchArray() |
-| :pextomatchobject | expect()->toMatchObject() |
-| :pextoequal | expect()->toEqual() |
-| :pextoequalcanonicalizing | expect()->toEqualCanonicalizing() |
-| :pextoequalwithdelta | expect()->toEqualWithDelta() |
-| :pextobeinfinite | expect()->toBeInfinite() |
-| :pextobeinstanceof | expect()->toBeInstanceOf() |
-| :pextobebool | expect()->toBeBool() |
-| :pextobecallable | expect()->toBeCallable() |
-| :pextobefloat | expect()->toBeFloat() |
-| :pextobeint | expect()->toBeInt() |
-| :pextobeiterable | expect()->toBeIterable() |
-| :pextobenumeric | expect()->toBeNumeric() |
-| :pextobeobject | expect()->toBeObject() |
-| :pextoberesource | expect()->toBeResource() |
-| :pextobescalar | expect()->toBeScalar() |
-| :pextobestring | expect()->toBeString() |
-| :pextobejson | expect()->toBeJson() |
-| :pextobenan | expect()->toBeNan() |
-| :pextobenull | expect()->toBeNull() |
-| :pextohavekey | expect()->toHaveKey() |
-| :pextohavekeys | expect()->toHaveKeys() |
-| :pextobereadabledirectory | expect()->toBeReadableDirectory() |
-| :pextobewritabledirectory | expect()->toBeWritableDirectory() |
-| :pextostartwith | expect()->toStartWith() |
-| :pextoendwith | expect()->toEndWith() |
-| :pextomatch | expect()->PestExpectToMatch() |
-| :pextomatchconstraint | expect()->toMatchConstraint() |
-| :pexdd | expect()->dd() |
-| :pexray | expect()->ray()|
+| :pex | expect()-> |
+| :pextobe | ->toBe() |
+| :pextobeempty | ->toBeEmpty() |
+| :pextobetrue | ->toBeTrue() |
+| :pextobefalse | ->toBeFalse() |
+| :pextobegreaterthan | ->toBeGreaterThan() |
+| :pextobegreaterthanorequal | ->toBeGreaterThanOrEqual() |
+| :pextobelessthan | ->toBeLessThan() |
+| :pextobelessthanorequal | ->toBeLessThanOrEqual() |
+| :pextocontain | ->toContain() |
+| :pextohavecount | ->toHaveCount() |
+| :pextohaveproperty | ->toHaveProperty() |
+| :pextomatcharray | ->toMatchArray() |
+| :pextomatchobject | ->toMatchObject() |
+| :pextoequal | ->toEqual() |
+| :pextoequalcanonicalizing | ->toEqualCanonicalizing() |
+| :pextoequalwithdelta | ->toEqualWithDelta() |
+| :pextobeinfinite | ->toBeInfinite() |
+| :pextobeinstanceof | ->toBeInstanceOf() |
+| :pextobebool | ->toBeBool() |
+| :pextobecallable | ->toBeCallable() |
+| :pextobefloat | ->toBeFloat() |
+| :pextobeint | ->toBeInt() |
+| :pextobeiterable | ->toBeIterable() |
+| :pextobenumeric | ->toBeNumeric() |
+| :pextobeobject | ->toBeObject() |
+| :pextoberesource | ->toBeResource() |
+| :pextobescalar | ->toBeScalar() |
+| :pextobestring | ->toBeString() |
+| :pextobejson | ->toBeJson() |
+| :pextobenan | ->toBeNan() |
+| :pextobenull | ->toBeNull() |
+| :pextohavekey | ->toHaveKey() |
+| :pextohavekeys | ->toHaveKeys() |
+| :pextobedirectory | ->toBeReadableDirectory() |
+| :pextobereadabledirectory | ->toBeReadableDirectory() |
+| :pextobewritabledirectory | ->toBeWritableDirectory() |
+| :pextostartwith | ->toStartWith() |
+| :pextoendwith | ->toEndWith() |
+| :pextomatch | ->PestExpectToMatch() |
+| :pextomatchconstraint | ->toMatchConstraint() |
+| :pexdd | ->dd() |
+| :pexray | ->ray()|
+| :pexjson | ->json()-> |
 | :pexand | ->and()-> |
 | :pexnot | ->not()-> |
 | :pexeach | ->each()-> |
