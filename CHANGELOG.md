@@ -2,7 +2,7 @@
 
 All notable changes to the "pest-snippets" extension will be documented in this file.
 
-## [1.0]
+## [1.0.0]
 
 - Removed `->` from `pex:`
 - Removed indentation from every `pex:...`
