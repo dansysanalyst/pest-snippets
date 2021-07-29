@@ -172,6 +172,7 @@ Available `expect()` methods:
 | :pextoequal | ->toEqual() |
 | :pextoequalcanonicalizing | ->toEqualCanonicalizing() |
 | :pextoequalwithdelta | ->toEqualWithDelta() |
+| :pextobein | ->toBeIn() |
 | :pextobeinfinite | ->toBeInfinite() |
 | :pextobeinstanceof | ->toBeInstanceOf() |
 | :pextobebool | ->toBeBool() |
@@ -201,5 +202,6 @@ Available `expect()` methods:
 | :pexjson | ->json()-> |
 | :pexand | ->and()-> |
 | :pexnot | ->not()-> |
+| :pextap| ->tap()-> |
 | :pexeach | ->each()-> |
 | :pexsequence | ->sequence() |

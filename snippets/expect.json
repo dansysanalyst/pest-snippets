@@ -118,6 +118,13 @@
       "->toEqualWithDelta(${1:});\n"],
     "description": "Pest ->toEqualWithDelta()"
   },
+  "PestExpectToBeIn": {
+    "scope": "php",
+    "prefix": ":pextobein",
+    "body": [
+      "->toBeIn();\n"],
+    "description": "Pest ->toBeIn()"
+  },
   "PestExpectToBeInfinite": {
     "scope": "php",
     "prefix": ":pextobeinfinite",
@@ -320,6 +327,13 @@
     "body": [
       "->not->\n"],
     "description": "Pest ->not->"
+  },
+  "PestExpectTap": {
+    "scope": "php",
+    "prefix": ":pextap",
+    "body": [
+      "->tap(${1:})->\n"],
+    "description": "Pest ->tap()->"
   },
   "PestExpectEach": {
     "scope": "php",
