@@ -159,7 +159,9 @@ Available `expect()` methods:
 | :pextobe | ->toBe() |
 | :pextobeempty | ->toBeEmpty() |
 | :pextobetrue | ->toBeTrue() |
+| :pextobetruthy | ->toBeTruthy() |
 | :pextobefalse | ->toBeFalse() |
+| :pextobefalsy | ->toBeFalsy() |
 | :pextobegreaterthan | ->toBeGreaterThan() |
 | :pextobegreaterthanorequal | ->toBeGreaterThanOrEqual() |
 | :pextobelessthan | ->toBeLessThan() |

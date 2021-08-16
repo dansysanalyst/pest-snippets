@@ -27,12 +27,26 @@
       "->toBeTrue();\n"],
     "description": "Pest ->toBeTrue()"
   },
+  "PestExpectToBeTruthy": {
+    "scope": "php",
+    "prefix": ":pextobetruthy",
+    "body": [
+      "->toBeTruthy();\n"],
+    "description": "Pest ->toBeTruthy()"
+  },
   "PestExpectToBeFalse": {
     "scope": "php",
     "prefix": ":pextobefalse",
     "body": [
       "->toBeFalse();\n"],
     "description": "Pest ->toBeFalse()"
+  },
+  "PestExpectToBeFalsy": {
+    "scope": "php",
+    "prefix": ":pextobefalsy",
+    "body": [
+      "->toBeFalsy();\n"],
+    "description": "Pest ->toBeFalsy()"
   },
   "PestExpectToBeGreaterThan": {
     "scope": "php",

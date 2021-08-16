@@ -2,6 +2,11 @@
 
 All notable changes to the "pest-snippets" extension will be documented in this file.
 
+## [1.0.2]
+
+- Added `:pextobetruthy` for `->toBeTruthy()`
+- Added `:pextobefalsy` for `->toBeFalsy()` method
+
 ## [1.0.1]
 
 - Added `:pextobein` for `->toBeIn()`
