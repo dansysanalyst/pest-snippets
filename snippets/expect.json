@@ -300,6 +300,13 @@
       "->toMatch(${1:});\n"],
     "description": "Pest ->toMatch()"
   },
+  "PestExpectToThrow": {
+    "scope": "php",
+    "prefix": ":pextothrow",
+    "body": [
+      "->toThrow(${1:});\n"],
+    "description": "Pest ->toThrow()"
+  },
   "PestExpectToMatchConstraint": {
     "scope": "php",
     "prefix": ":pextomatchconstraint",

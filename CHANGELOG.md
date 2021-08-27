@@ -2,6 +2,10 @@
 
 All notable changes to the "pest-snippets" extension will be documented in this file.
 
+## [1.0.3]
+
+- Added `:pextothrow` for `->toThrow()`
+
 ## [1.0.2]
 
 - Added `:pextobetruthy` for `->toBeTruthy()`
