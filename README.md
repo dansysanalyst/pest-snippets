@@ -192,6 +192,7 @@ Available `expect()` methods:
 | :pextobenull | ->toBeNull() |
 | :pextohavekey | ->toHaveKey() |
 | :pextohavekeys | ->toHaveKeys() |
+| :pextohavelength | ->toHaveLength() |
 | :pextobedirectory | ->toBeReadableDirectory() |
 | :pextobereadabledirectory | ->toBeReadableDirectory() |
 | :pextobewritabledirectory | ->toBeWritableDirectory() |

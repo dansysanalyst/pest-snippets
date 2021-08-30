@@ -258,6 +258,13 @@
       "->toHaveKeys(${1:});\n"],
     "description": "Pest ->toHaveKeys()"
   },
+  "PestExpectToHaveLength": {
+    "scope": "php",
+    "prefix": ":pextohavelength",
+    "body": [
+      "->toHaveLength();\n"],
+    "description": "Pest ->toHaveLength()"
+  },
   "PestExpectToBeDirectory": {
     "scope": "php",
     "prefix": ":pextobedirectory",
