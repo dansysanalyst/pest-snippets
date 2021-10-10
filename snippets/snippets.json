@@ -15,6 +15,22 @@
     ],
     "description": "Pest it()"
   },
+  "PestTestThrowsIf": {
+    "scope": "php",
+    "prefix": ":ptet",
+    "body": [
+      "test('${1:}', function () {", "    //expect(${2:})->", "})->throwsIf();\n"
+    ],
+    "description": "Pest test()->throwsIf()"
+  },
+  "PestItThrowsIf": {
+    "scope": "php",
+    "prefix": ":pitt",
+    "body": [
+      "it('${1:}', function () {", "    //expect(${2:})->", "})->throwsIf();\n"
+    ],
+    "description": "Pest it()->throwsIf()"
+  },
   "PestTestFunctionWithSkip": {
     "scope": "php",
     "prefix": ":ptes",

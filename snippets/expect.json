@@ -97,6 +97,13 @@
       "->toHaveProperty(${1:});\n"],
     "description": "Pest ->toHaveProperty()"
   },
+  "PestExpectToHaveProperties": {
+    "scope": "php",
+    "prefix": ":pextohaveproperties",
+    "body": [
+      "->toHaveProperties(${1:});\n"],
+    "description": "Pest ->toHaveProperties()"
+  },
   "PestExpectToMatchArray": {
     "scope": "php",
     "prefix": ":pextomatcharray",
@@ -328,6 +335,13 @@
       "->json()->\n"],
     "description": "Pest ->json()->"
   },
+  "PestExpectMatch": {
+    "scope": "php",
+    "prefix": ":pexmatch",
+    "body": [
+      "->match()->\n"],
+    "description": "Pest ->match()->"
+  },
   "PestExpectDd": {
     "scope": "php",
     "prefix": ":pexdd",
@@ -376,6 +390,19 @@
     "body": [
       "->sequence(${1:});\n"],
     "description": "Pest ->sequence()"
+  },
+  "PestExpectWhen": {
+    "scope": "php",
+    "prefix": ":pexwhen",
+    "body": [
+      "->when(${1:});\n"],
+    "description": "Pest ->when()"
+  },
+  "PestExpectUnless": {
+    "scope": "php",
+    "prefix": ":pexunless",
+    "body": [
+      "->unless(${1:});\n"],
+    "description": "Pest ->unless()"
   }
-
 }

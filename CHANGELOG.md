@@ -2,6 +2,15 @@
 
 All notable changes to the "pest-snippets" extension will be documented in this file.
 
+## [1.0.5]
+
+- Added `:pextohaveproperties` for `->toHaveProperties()`
+- Added `:pexwhen` for `->when()`
+- Added `:pexunless` for `->unless()`
+- Added `:pexmatch` for `->match()`
+- Added `:ptet` for `test()->throwsIf()`
+- Added `:pitt` for `it()->throwsIf()`
+
 ## [1.0.4]
 
 - Added `:pextohavelength` for `->toHaveLength()`
