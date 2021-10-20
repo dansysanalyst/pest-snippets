@@ -2,6 +2,14 @@
 
 All notable changes to the "pest-snippets" extension will be documented in this file.
 
+## [1.0.6]
+
+- Fixed and update README.md
+- Changed `:ptet` into `->test()->throws()`
+- Changed `:pitt` into `->it()->throws()`
+- Added `:ptetif` for `->test()->throwsIf()`
+- Added `:pittif` for `->it()->throwsIf()`
+
 ## [1.0.5]
 
 - Added `:pextohaveproperties` for `->toHaveProperties()`

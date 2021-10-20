@@ -32,7 +32,7 @@ Type `:ptes` / `:pits` for the desired function with `skip()`:
 
 ```php
 test('', function () {
-  //..
+  //...
 })->skip();
 ```
 
@@ -40,7 +40,7 @@ Type `:pteo` / `:pito` + [TAB] for the desired function with `only()`:
 
 ```php
 test('', function () {
-  //..
+  //...
 })->only();
 ```
 
@@ -52,7 +52,7 @@ Type `:ptewip` / `:pitwip` for the desired function with `skip('wip')`:
 
 ```php
 test('', function () {
-  //..
+  //...
 })->skip('wip');
 ```
 
@@ -60,7 +60,7 @@ Type `:pteo` / `:pito` + [TAB] for the desired function with `only()`:
 
 ```php
 test('', function () {
-  //..
+  //...
 })->only();
 ```
 
@@ -70,7 +70,7 @@ Type `:pteg` / `:pitg`  + [TAB] for the desired function with `group()`:
 
 ```php
 test('', function () {
-  //..
+  //...
 })->group();
 ```
 
@@ -80,7 +80,7 @@ Type `:pted` / `:pitd`  + [TAB] for the desired function with `with()`:
 
 ```php
 test('', function () {
-  //..
+  //...
 })->with();
 ```
 
@@ -88,10 +88,44 @@ Type `:pteld` / `:pitld` + [TAB] for the desired function with `with()` for Lazy
 
 ```php
 test('', function () {
-  //..
+  //...
 })-> with(function () {
   yield '';
 });
+```
+
+### Exceptions & Errors
+
+Type `:ptet` + [TAB] for:
+
+```php
+test('throws exception', function () {
+    //...
+})->throws();
+```
+
+Type `:pitt` + [TAB] for:
+
+```php
+it('throws exception', function () {
+    //...
+})->throws();
+```
+
+Type `:ptetif` + [TAB] for:
+
+```php
+test('throws exception if...', function () {
+    //...
+})->throwsIf();
+```
+
+Type `:pittif` + [TAB] for:
+
+```php
+it('throws exception if...', function () {
+    //...
+})->throwsIf();
 ```
 
 ### Setup and teardown
@@ -100,7 +134,7 @@ Type `:pbe` + [TAB] for:
 
 ```php
 beforeEach(function () {
-  //..
+  //...
 });
 ```
 
@@ -108,7 +142,7 @@ Type `:pae` + [TAB] for:
 
 ```php
 afterEach(function () {
-  //..
+  //...
 });
 ```
 
@@ -116,7 +150,7 @@ Type `:pba` + [TAB] for:
 
 ```php
 beforeAll(function () {
-  //..
+  //...
 });
 ```
 
@@ -124,7 +158,7 @@ Type `:paa` + [TAB] for:
 
 ```php
 afterAll(function () {
-  //..
+  //...
 });
 ```
 
@@ -169,6 +203,7 @@ Available `expect()` methods:
 | :pextocontain | ->toContain() |
 | :pextohavecount | ->toHaveCount() |
 | :pextohaveproperty | ->toHaveProperty() |
+| :pextohaveproperties | ->toHaveProperties() |
 | :pextomatcharray | ->toMatchArray() |
 | :pextomatchobject | ->toMatchObject() |
 | :pextoequal | ->toEqual() |
@@ -198,7 +233,8 @@ Available `expect()` methods:
 | :pextobewritabledirectory | ->toBeWritableDirectory() |
 | :pextostartwith | ->toStartWith() |
 | :pextoendwith | ->toEndWith() |
-| :pextomatch | ->PestExpectToMatch() |
+| :pextoendwith | ->toEndWith() |
+| :pextomatch | ->toMatch() |
 | :pextomatchconstraint | ->toMatchConstraint() |
 | :pexdd | ->dd() |
 | :pexray | ->ray()|
@@ -208,3 +244,6 @@ Available `expect()` methods:
 | :pextap| ->tap()-> |
 | :pexeach | ->each()-> |
 | :pexsequence | ->sequence() |
+| :pexwhen | ->when() |
+| :pexunless | ->unless() |
+| :pexunless | ->unless() |
