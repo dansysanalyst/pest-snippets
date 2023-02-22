@@ -1,16 +1,34 @@
-# Pest PHP Snippets
+# Pest Snippets
 
-Code snippets for writing [Pest PHP](https://pestphp.com/) tests in Visual Studio Code.
+Pest Snippets is a compilation of code snippets for writing tests with [Pest PHP](https://pestphp.com/).
+
+Code snippets are templates for the codes you use most often.
+
+Using snippets allows you to write code faster, boosting your productivity, and preventing mistakes.
+
+⭐ Please consider starring the [GitHub repository](https://github.com/dansysanalyst/pest-snippets) if you find this extension useful.
+
+## 🚀 Quick start
+
+Just type `:p` to get a list of all code snippets.
+
+Additionally, you can type:
+
+- `:pte` to access all `test()` snippets.
+
+- `:pti` to access all `it()` snippets.
+
+- `:pex` to access the available `expect()` methods.
 
 ![Screenshot](https://github.com/dansysanalyst/pest-snippets/raw/main/images/screenshot.gif)
 
-## Usage
+## 🗒️ Code Snippet List
 
-### Writing Tests
+### Test templates
 
-Pest provides two fuctions for testing `test()` and `it()`.
+Pest provides two functions for writing tests: `test()` and `it()`.
 
-Type `:pte` + [TAB] for:
+Type `:pte` + [TAB] to use the `test()` function:
 
 ```php
 test('', function () {
@@ -18,7 +36,7 @@ test('', function () {
 });
 ```
 
-Type `:pit` + [TAB] for:
+Type `:pit` + [TAB] to the `ìt()` function:
 
 ```php
 it('', function () {
@@ -28,7 +46,7 @@ it('', function () {
 
 #### Skipping tests
 
-Type `:ptes` / `:pits` for the desired function with `skip()`:
+Type `:ptes` / `:pits` to create a test with `skip()`:
 
 ```php
 test('', function () {
@@ -36,7 +54,7 @@ test('', function () {
 })->skip();
 ```
 
-Type `:pteo` / `:pito` + [TAB] for the desired function with `only()`:
+Type `:pteo` / `:pito` + [TAB] to create a test with `only()`:
 
 ```php
 test('', function () {
@@ -44,11 +62,11 @@ test('', function () {
 })->only();
 ```
 
-#### Skipping tests (wip)
+#### Skipping tests (WIP)
 
-`wip` stands for "Work In Progress".
- 
-Type `:ptewip` / `:pitwip` for the desired function with `skip('wip')`:
+WIP stands for "Work In Progress".
+
+Type `:ptewip` / `:pitwip` to create a test with `skip('wip')`:
 
 ```php
 test('', function () {
@@ -56,17 +74,9 @@ test('', function () {
 })->skip('wip');
 ```
 
-Type `:pteo` / `:pito` + [TAB] for the desired function with `only()`:
-
-```php
-test('', function () {
-  //...
-})->only();
-```
-
 #### Groups of tests
 
-Type `:pteg` / `:pitg`  + [TAB] for the desired function with `group()`:
+Type `:pteg` / `:pitg` + [TAB] to create a test with `group()`:
 
 ```php
 test('', function () {
@@ -76,7 +86,7 @@ test('', function () {
 
 #### Datasets
 
-Type `:pted` / `:pitd`  + [TAB] for the desired function with `with()`:
+Type `:pted` / `:pitd` + [TAB] to create a test with `with()`:
 
 ```php
 test('', function () {
@@ -84,7 +94,7 @@ test('', function () {
 })->with();
 ```
 
-Type `:pteld` / `:pitld` + [TAB] for the desired function with `with()` for Lazy datasets:
+Type `:pteld` / `:pitld` + [TAB] to create a test with `with()` using Lazy datasets:
 
 ```php
 test('', function () {
@@ -96,7 +106,7 @@ test('', function () {
 
 ### Exceptions & Errors
 
-Type `:ptet` + [TAB] for:
+Type `:ptet` / `:pitt` + [TAB] to create a test with `throws()`:
 
 ```php
 test('throws exception', function () {
@@ -104,15 +114,7 @@ test('throws exception', function () {
 })->throws();
 ```
 
-Type `:pitt` + [TAB] for:
-
-```php
-it('throws exception', function () {
-    //...
-})->throws();
-```
-
-Type `:ptetif` + [TAB] for:
+Type `:ptetif` / `:pittif` + [TAB] to create a test with `throwsIf()`:
 
 ```php
 test('throws exception if...', function () {
@@ -120,17 +122,9 @@ test('throws exception if...', function () {
 })->throwsIf();
 ```
 
-Type `:pittif` + [TAB] for:
-
-```php
-it('throws exception if...', function () {
-    //...
-})->throwsIf();
-```
-
 ### Setup and teardown
 
-Type `:pbe` + [TAB] for:
+Type `:pbe` + [TAB] to create a `beforeEach()` function:
 
 ```php
 beforeEach(function () {
@@ -138,7 +132,7 @@ beforeEach(function () {
 });
 ```
 
-Type `:pae` + [TAB] for:
+Type `:pae` + [TAB] to create a `afterEach()` function:
 
 ```php
 afterEach(function () {
@@ -146,7 +140,7 @@ afterEach(function () {
 });
 ```
 
-Type `:pba` + [TAB] for:
+Type `:pba` + [TAB] to create a `beforeAll()` function:
 
 ```php
 beforeAll(function () {
@@ -154,7 +148,7 @@ beforeAll(function () {
 });
 ```
 
-Type `:paa` + [TAB] for:
+Type `:paa` + [TAB] to create a `afterAll()` function:
 
 ```php
 afterAll(function () {
@@ -164,86 +158,80 @@ afterAll(function () {
 
 ### Expectation API
 
-Type `:pex` + [TAB] for:
+Type `:pex` + [TAB] to create a `expect()` function:
 
 ```php
   expect()
 ```
 
-Continue typing `:pex` and complete with your desired `expect()` method.
+Then, type `:pex` and use your keyboard to move through all the different `expectation` methods.
 
-For example, `:pextobe` + [TAB] produces:
-
-```php
-->toBe()
-```
-
-All together:
+For example, type: `pex` + [TAB]  and then `:pextobe` + [TAB] results in:
 
 ```php
   expect()->toBe()
 ```
 
-
 Available `expect()` methods:
 
-| Trigger  | Snippet          |
-| -------- | ---------------- |
-| :pex | expect()-> |
-| :pextobe | ->toBe() |
-| :pextobeempty | ->toBeEmpty() |
-| :pextobetrue | ->toBeTrue() |
-| :pextobetruthy | ->toBeTruthy() |
-| :pextobefalse | ->toBeFalse() |
-| :pextobefalsy | ->toBeFalsy() |
-| :pextobegreaterthan | ->toBeGreaterThan() |
-| :pextobegreaterthanorequal | ->toBeGreaterThanOrEqual() |
-| :pextobelessthan | ->toBeLessThan() |
-| :pextobelessthanorequal | ->toBeLessThanOrEqual() |
-| :pextocontain | ->toContain() |
-| :pextohavecount | ->toHaveCount() |
-| :pextohaveproperty | ->toHaveProperty() |
-| :pextohaveproperties | ->toHaveProperties() |
-| :pextomatcharray | ->toMatchArray() |
-| :pextomatchobject | ->toMatchObject() |
-| :pextoequal | ->toEqual() |
-| :pextoequalcanonicalizing | ->toEqualCanonicalizing() |
-| :pextoequalwithdelta | ->toEqualWithDelta() |
-| :pextobein | ->toBeIn() |
-| :pextobeinfinite | ->toBeInfinite() |
-| :pextobeinstanceof | ->toBeInstanceOf() |
-| :pextobebool | ->toBeBool() |
-| :pextobecallable | ->toBeCallable() |
-| :pextobefloat | ->toBeFloat() |
-| :pextobeint | ->toBeInt() |
-| :pextobeiterable | ->toBeIterable() |
-| :pextobenumeric | ->toBeNumeric() |
-| :pextobeobject | ->toBeObject() |
-| :pextoberesource | ->toBeResource() |
-| :pextobescalar | ->toBeScalar() |
-| :pextobestring | ->toBeString() |
-| :pextobejson | ->toBeJson() |
-| :pextobenan | ->toBeNan() |
-| :pextobenull | ->toBeNull() |
-| :pextohavekey | ->toHaveKey() |
-| :pextohavekeys | ->toHaveKeys() |
-| :pextohavelength | ->toHaveLength() |
-| :pextobedirectory | ->toBeReadableDirectory() |
-| :pextobereadabledirectory | ->toBeReadableDirectory() |
-| :pextobewritabledirectory | ->toBeWritableDirectory() |
-| :pextostartwith | ->toStartWith() |
-| :pextoendwith | ->toEndWith() |
-| :pextoendwith | ->toEndWith() |
-| :pextomatch | ->toMatch() |
-| :pextomatchconstraint | ->toMatchConstraint() |
-| :pexdd | ->dd() |
-| :pexray | ->ray()|
-| :pexjson | ->json()-> |
-| :pexand | ->and()-> |
-| :pexnot | ->not()-> |
-| :pextap| ->tap()-> |
-| :pexeach | ->each()-> |
-| :pexsequence | ->sequence() |
-| :pexwhen | ->when() |
-| :pexunless | ->unless() |
-| :pexunless | ->unless() |
+| Trigger                       | Snippet                    |
+| ----------------------------- | -------------------------- |
+| : `pex`                       | expect()->                 |
+| : `pextobe`                   | ->toBe()                   |
+| : `pextobeempty`              | ->toBeEmpty()              |
+| : `pextobetrue`               | ->toBeTrue()               |
+| : `pextobetruthy`             | ->toBeTruthy()             |
+| : `pextobefalse`              | ->toBeFalse()              |
+| : `pextobefalsy`              | ->toBeFalsy()              |
+| : `pextobegreaterthan`        | ->toBeGreaterThan()        |
+| : `pextobegreaterthanorequal` | ->toBeGreaterThanOrEqual() |
+| : `pextobelessthan`           | ->toBeLessThan()           |
+| : `pextobelessthanorequal`    | ->toBeLessThanOrEqual()    |
+| : `pextocontain`              | ->toContain()              |
+| : `pextohavecount`            | ->toHaveCount()            |
+| : `pextohaveproperty`         | ->toHaveProperty()         |
+| : `pextohaveproperties`       | ->toHaveProperties()       |
+| : `pextomatcharray`           | ->toMatchArray()           |
+| : `pextomatchobject`          | ->toMatchObject()          |
+| : `pextoequal`                | ->toEqual()                |
+| : `pextoequalcanonicalizing`  | ->toEqualCanonicalizing()  |
+| : `pextoequalwithdelta`       | ->toEqualWithDelta()       |
+| : `pextobein`                 | ->toBeIn()                 |
+| : `pextobeinfinite`           | ->toBeInfinite()           |
+| : `pextobeinstanceof`         | ->toBeInstanceOf()         |
+| : `pextobebool`               | ->toBeBool()               |
+| : `pextobecallable`           | ->toBeCallable()           |
+| : `pextobefloat`              | ->toBeFloat()              |
+| : `pextobeint`                | ->toBeInt()                |
+| : `pextobeiterable`           | ->toBeIterable()           |
+| : `pextobenumeric`            | ->toBeNumeric()            |
+| : `pextobeobject`             | ->toBeObject()             |
+| : `pextoberesource`           | ->toBeResource()           |
+| : `pextobescalar`             | ->toBeScalar()             |
+| : `pextobestring`             | ->toBeString()             |
+| : `pextobejson`               | ->toBeJson()               |
+| : `pextobenan`                | ->toBeNan()                |
+| : `pextobenull`               | ->toBeNull()               |
+| : `pextohavekey`              | ->toHaveKey()              |
+| : `pextohavekeys`             | ->toHaveKeys()             |
+| : `pextohavelength`           | ->toHaveLength()           |
+| : `pextobedirectory`          | ->toBeReadableDirectory()  |
+| : `pextobereadabledirectory`  | ->toBeReadableDirectory()  |
+| : `pextobewritabledirectory`  | ->toBeWritableDirectory()  |
+| : `pextostartwith`            | ->toStartWith()            |
+| : `pextothrow`                | ->toThrow()                |
+| : `pextoendwith`              | ->toEndWith()              |
+| : `pextoendwith`              | ->toEndWith()              |
+| : `pextomatch`                | ->toMatch()                |
+| : `pextomatchconstraint`      | ->toMatchConstraint()      |
+| : `pexdd`                     | ->dd()                     |
+| : `pexray`                    | ->ray()                    |
+| : `pexjson`                   | ->json()->                 |
+| : `pexand`                    | ->and()->                  |
+| : `pexnot`                    | ->not()->                  |
+| : `pextap`                    | ->tap()->                  |
+| : `pexeach`                   | ->each()->                 |
+| : `pexsequence`               | ->sequence()               |
+| : `pexwhen`                   | ->when()                   |
+| : `pexunless`                 | ->unless()                 |
+| : `pexunless`                 | ->unless()                 |
