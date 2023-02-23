@@ -2,6 +2,15 @@
 
 All notable changes to the "pest-snippets" extension will be documented in this file.
 
+## [1.0.7]
+
+- DOC: README improvements
+- Modified logo
+- Updated screenshot
+- Added LICENSE
+- Added `:pextothrow` for `->toThrow()`
+- Added compile.sh script
+
 ## [1.0.6]
 
 - Fixed and update README.md
