@@ -110,7 +110,7 @@ function addChangelog()
 compileExtension()
 {
   if ls ./*.vsix >/dev/null 2>&1; then
-    throwException "NodeJS is required. Aborting!"
+    rm ./*.vsix
   fi
   
   msg::info compiling...
