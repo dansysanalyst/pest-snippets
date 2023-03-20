@@ -2,6 +2,29 @@
 
 All notable changes to the "pest-snippets" extension will be documented in this file.
 
+## [2.0.0]
+
+- Ready for Pest V2
+- Added `:petodo` and `:pitodo` to generate a test with `->todo()`
+- Added `:penoex` and `:pitnoex` to generate a test with `->throwsNoExceptions()`
+- Added `:pextobearray` for `->toBeArray()`
+- Added `:pextocontainonlyins` for `->toContainOnlyInstancesOf()`
+- Added `:pextohavemethod` for `->toHaveMethod()`
+- Added `:pextohavemethods` for `->toHaveMethods()`
+- Added `:pextobefile` for `->toBeFile()`
+- Added `:pextobereadablefile` for `->toBeReadableFile()`
+- Added `:pextobewritablefile` for `->toBeWritableFile()`
+- Added `:pexdef` for `->defer()->`
+- Improved `throwsIf` snippet
+- Removed `:pextap` due to deprecation of  `->tap()`
+- Removed `:pteo` and `:pito` due to deprecation of  `->only()`
+
+```php
+test('throws no exceptions', function () {
+    //...
+})->throwsNoExceptions();
+```
+
 ## [1.0.7]
 
 - DOC: README improvements

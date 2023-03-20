@@ -3,7 +3,7 @@
     "displayName": "Pest Snippets",
     "publisher": "dansysanalyst",
     "description": "Snippets for Pest PHP testing framework",
-    "version": "1.0.7",
+    "version": "2.0.0",
     "engines": {
         "vscode": "^1.57.0"
     },
