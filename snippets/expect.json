@@ -13,6 +13,13 @@
       "->toBe(${1:});\n"],
     "description": "Pest ->toBe()"
   },
+  "->toBeArray()": {
+    "scope": "php",
+    "prefix": ":pextobearray",
+    "body": [
+      "->toBeArray(${1:});\n"],
+    "description": "Pest ->toBeArray()"
+  },
   "->toBeEmpty();": {
     "scope": "php",
     "prefix": ":pextobeempty",
@@ -83,12 +90,33 @@
       "->toContain(${1:});\n"],
     "description": "Pest ->toContain()"
   },
+  "->toContainOnlyInstancesOf()": {
+    "scope": "php",
+    "prefix": ":pextocontainonlyins",
+    "body": [
+      "->toContainOnlyInstancesOf(${1:});\n"],
+    "description": "Pest ->toContainOnlyInstancesOf()"
+  },
   "->toHaveCount()": {
     "scope": "php",
     "prefix": ":pextohavecount",
     "body": [
       "->toHaveCount(${1:});\n"],
     "description": "Pest ->toHaveCount()"
+  },
+  "->pextohavemethod()": {
+    "scope": "php",
+    "prefix": ":pextohavemethod",
+    "body": [
+      "->pextohavemethod(${1:});\n"],
+    "description": "Pest ->pextohavemethod()"
+  },
+  "->pextohavemethods()": {
+    "scope": "php",
+    "prefix": ":pextohavemethods",
+    "body": [
+      "->pextohavemethods(${1:});\n"],
+    "description": "Pest ->pextohavemethods()"
   },
   "->toHaveProperty()": {
     "scope": "php",
@@ -173,6 +201,13 @@
     "body": [
       "->toBeCallable();\n"],
     "description": "Pest ->toBeCallable()"
+  },
+  "->toBeFile()": {
+    "scope": "php",
+    "prefix": ":pextobefile",
+    "body": [
+      "->toBeFile();\n"],
+    "description": "Pest ->toBeFile()"
   },
   "->toBeFloat()": {
     "scope": "php",
@@ -286,12 +321,26 @@
       "->toBeReadableDirectory();\n"],
     "description": "Pest ->toBeReadableDirectory"
   },
+  "->toBeReadableFile": {
+    "scope": "php",
+    "prefix": ":pextobereadablefile",
+    "body": [
+      "->toBeReadableFile();\n"],
+    "description": "Pest ->toBeReadableFile"
+  },
   "->toBeWritableDirectory()": {
     "scope": "php",
     "prefix": ":pextobewritabledirectory",
     "body": [
       "->toBeWritableDirectory();\n"],
     "description": "Pest ->toBeWritableDirectory()"
+  },
+    "->toBeWritableFile()": {
+    "scope": "php",
+    "prefix": ":pextobewritablefile",
+    "body": [
+      "->toBeWritableFile();\n"],
+    "description": "Pest ->toBeWritableFile()"
   },
   "->toStartWith()": {
     "scope": "php",
@@ -370,11 +419,11 @@
       "->not->\n"],
     "description": "Pest ->not->"
   },
-  "->tap()": {
+  "->defer()": {
     "scope": "php",
-    "prefix": ":pextap",
+    "prefix": ":pexdef",
     "body": [
-      "->tap(${1:})->\n"],
+      "->defer(${1:})->\n"],
     "description": "Pest ->tap()->"
   },
   "->each()": {

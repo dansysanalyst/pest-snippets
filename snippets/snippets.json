@@ -35,17 +35,33 @@
     "scope": "php",
     "prefix": ":ptetif",
     "body": [
-      "test('${1:}', function () {", "    //expect(${2:})->", "})->throwsIf();\n"
+      "test('${1:}', function () {", "    //expect(${2:})->", "})->throwsIf(fn() => true);\n"
     ],
-    "description": "Pest test()->throwsIf()"
+    "description": "Pest test()->throwsIf(fn() => true)"
   },
   "PestItThrowsIf": {
     "scope": "php",
     "prefix": ":pittif",
     "body": [
-      "it('${1:}', function () {", "    //expect(${2:})->", "})->throwsIf();\n"
+      "it('${1:}', function () {", "    //expect(${2:})->", "})->throwsIf(fn() => true);\n"
     ],
-    "description": "Pest it()->throwsIf(fn() =>)"
+    "description": "Pest it()->throwsIf(fn() => true)"
+  },
+  "PestTestthrowsNoExceptions": {
+    "scope": "php",
+    "prefix": ":penoex",
+    "body": [
+      "test('${1:}', function () {", "    //expect(${2:})->", "})->throwsNoExceptions();\n"
+    ],
+    "description": "Pest test()->throwsNoExceptions()"
+  },
+  "PestItthrowsNoExceptions": {
+    "scope": "php",
+    "prefix": ":pitnoex",
+    "body": [
+      "it('${1:}', function () {", "    //expect(${2:})->", "})->throwsNoExceptions();\n"
+    ],
+    "description": "Pest it()->throwsNoExceptions()"
   },
   "PestTestFunctionWithSkip": {
     "scope": "php",
@@ -79,21 +95,21 @@
     ],
     "description": "Pest it() with Skip('wip')"
   },
-  "PestTestFunctionWithOnly": {
+  "PestTestFunctionWithTodo": {
     "scope": "php",
-    "prefix": ":pteo",
+    "prefix": ":petodo",
     "body": [
-      "test('${1:}', function () {", "    //expect(${2:})->", "})->only();\n"
+      "test('${1:}', function () {", "    //expect(${2:})->", "})->todo();\n"
     ],
-    "description": "Pest test() with Only"
+    "description": "Pest test() with Todo"
   },
-  "PestItFunctionWithOnly": {
+  "PestItFunctionWithTodo": {
     "scope": "php",
-    "prefix": ":pito",
+    "prefix": ":pitodo",
     "body": [
-      "it('${1:}', function () {", "    //expect(${2:})->", "})->only();\n"
+      "it('${1:}', function () {", "    //expect(${2:})->", "})->todo();\n"
     ],
-    "description": "Pest it() with Only"
+    "description": "Pest it() with Todo"
   },
   "PestTestFunctionWithGroup": {
     "scope": "php",

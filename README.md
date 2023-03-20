@@ -1,5 +1,7 @@
 # Pest Snippets
 
+**Ready for Pest v2**
+
 Pest Snippets is a compilation of code snippets for writing tests with [Pest PHP](https://pestphp.com/).
 
 Code snippets are templates for the codes you use most often.
@@ -54,12 +56,12 @@ test('', function () {
 })->skip();
 ```
 
-Type `:pteo` / `:pito` + [TAB] to create a test with `only()`:
+Type `:petodo` / `:pitodo` + [TAB] to create a test with `todo()`:
 
 ```php
 test('', function () {
   //...
-})->only();
+})->todo();
 ```
 
 #### Skipping tests (WIP)
@@ -122,6 +124,14 @@ test('throws exception if...', function () {
 })->throwsIf();
 ```
 
+Type `:penoex` / `:pitnoex` + [TAB] to create a test with `throwsNoExceptions()`:
+
+```php
+test('throws no exceptions', function () {
+    //...
+})->throwsNoExceptions();
+```
+
 ### Setup and teardown
 
 Type `:pbe` + [TAB] to create a `beforeEach()` function:
@@ -173,65 +183,70 @@ For example, type: `pex` + [TAB]  and then `:pextobe` + [TAB] results in:
 ```
 
 Available `expect()` methods:
-
-| Trigger                       | Snippet                    |
-| ----------------------------- | -------------------------- |
-| : `pex`                       | expect()->                 |
-| : `pextobe`                   | ->toBe()                   |
-| : `pextobeempty`              | ->toBeEmpty()              |
-| : `pextobetrue`               | ->toBeTrue()               |
-| : `pextobetruthy`             | ->toBeTruthy()             |
-| : `pextobefalse`              | ->toBeFalse()              |
-| : `pextobefalsy`              | ->toBeFalsy()              |
-| : `pextobegreaterthan`        | ->toBeGreaterThan()        |
-| : `pextobegreaterthanorequal` | ->toBeGreaterThanOrEqual() |
-| : `pextobelessthan`           | ->toBeLessThan()           |
-| : `pextobelessthanorequal`    | ->toBeLessThanOrEqual()    |
-| : `pextocontain`              | ->toContain()              |
-| : `pextohavecount`            | ->toHaveCount()            |
-| : `pextohaveproperty`         | ->toHaveProperty()         |
-| : `pextohaveproperties`       | ->toHaveProperties()       |
-| : `pextomatcharray`           | ->toMatchArray()           |
-| : `pextomatchobject`          | ->toMatchObject()          |
-| : `pextoequal`                | ->toEqual()                |
-| : `pextoequalcanonicalizing`  | ->toEqualCanonicalizing()  |
-| : `pextoequalwithdelta`       | ->toEqualWithDelta()       |
-| : `pextobein`                 | ->toBeIn()                 |
-| : `pextobeinfinite`           | ->toBeInfinite()           |
-| : `pextobeinstanceof`         | ->toBeInstanceOf()         |
-| : `pextobebool`               | ->toBeBool()               |
-| : `pextobecallable`           | ->toBeCallable()           |
-| : `pextobefloat`              | ->toBeFloat()              |
-| : `pextobeint`                | ->toBeInt()                |
-| : `pextobeiterable`           | ->toBeIterable()           |
-| : `pextobenumeric`            | ->toBeNumeric()            |
-| : `pextobeobject`             | ->toBeObject()             |
-| : `pextoberesource`           | ->toBeResource()           |
-| : `pextobescalar`             | ->toBeScalar()             |
-| : `pextobestring`             | ->toBeString()             |
-| : `pextobejson`               | ->toBeJson()               |
-| : `pextobenan`                | ->toBeNan()                |
-| : `pextobenull`               | ->toBeNull()               |
-| : `pextohavekey`              | ->toHaveKey()              |
-| : `pextohavekeys`             | ->toHaveKeys()             |
-| : `pextohavelength`           | ->toHaveLength()           |
-| : `pextobedirectory`          | ->toBeReadableDirectory()  |
-| : `pextobereadabledirectory`  | ->toBeReadableDirectory()  |
-| : `pextobewritabledirectory`  | ->toBeWritableDirectory()  |
-| : `pextostartwith`            | ->toStartWith()            |
-| : `pextothrow`                | ->toThrow()                |
-| : `pextoendwith`              | ->toEndWith()              |
-| : `pextoendwith`              | ->toEndWith()              |
-| : `pextomatch`                | ->toMatch()                |
-| : `pextomatchconstraint`      | ->toMatchConstraint()      |
-| : `pexdd`                     | ->dd()                     |
-| : `pexray`                    | ->ray()                    |
-| : `pexjson`                   | ->json()->                 |
-| : `pexand`                    | ->and()->                  |
-| : `pexnot`                    | ->not()->                  |
-| : `pextap`                    | ->tap()->                  |
-| : `pexeach`                   | ->each()->                 |
-| : `pexsequence`               | ->sequence()               |
-| : `pexwhen`                   | ->when()                   |
-| : `pexunless`                 | ->unless()                 |
-| : `pexunless`                 | ->unless()                 |
+| Trigger                       | Snippet                      |
+| ----------------------------- | ---------------------------- |
+| : `pex`                       | expect()->                   |
+| : `pextobe`                   | ->toBe()                     |
+| : `pextobearray`              | ->toBeArray()                |
+| : `pextobeempty`              | ->toBeEmpty()                |
+| : `pextobetrue`               | ->toBeTrue()                 |
+| : `pextobetruthy`             | ->toBeTruthy()               |
+| : `pextobefalse`              | ->toBeFalse()                |
+| : `pextobefalsy`              | ->toBeFalsy()                |
+| : `pextobegreaterthan`        | ->toBeGreaterThan()          |
+| : `pextobegreaterthanorequal` | ->toBeGreaterThanOrEqual()   |
+| : `pextobelessthan`           | ->toBeLessThan()             |
+| : `pextobelessthanorequal`    | ->toBeLessThanOrEqual()      |
+| : `pextocontain`              | ->toContain()                |
+| : `pextocontainonlyins`       | ->toContainOnlyInstancesOf() |
+| : `pextohavecount`            | ->toHaveCount()              |
+| : `pextohavemethod`           | ->toHaveMethod()             |
+| : `pextohavemethods`          | ->toHaveMethods()            |
+| : `pextohaveproperty`         | ->toHaveProperty()           |
+| : `pextohaveproperties`       | ->toHaveProperties()         |
+| : `pextomatcharray`           | ->toMatchArray()             |
+| : `pextomatchobject`          | ->toMatchObject()            |
+| : `pextoequal`                | ->toEqual()                  |
+| : `pextoequalcanonicalizing`  | ->toEqualCanonicalizing()    |
+| : `pextoequalwithdelta`       | ->toEqualWithDelta()         |
+| : `pextobein`                 | ->toBeIn()                   |
+| : `pextobeinfinite`           | ->toBeInfinite()             |
+| : `pextobeinstanceof`         | ->toBeInstanceOf()           |
+| : `pextobebool`               | ->toBeBool()                 |
+| : `pextobecallable`           | ->toBeCallable()             |
+| : `pextobefloat`              | ->toBeFloat()                |
+| : `pextobeint`                | ->toBeInt()                  |
+| : `pextobeiterable`           | ->toBeIterable()             |
+| : `pextobenumeric`            | ->toBeNumeric()              |
+| : `pextobeobject`             | ->toBeObject()               |
+| : `pextoberesource`           | ->toBeResource()             |
+| : `pextobescalar`             | ->toBeScalar()               |
+| : `pextobestring`             | ->toBeString()               |
+| : `pextobejson`               | ->toBeJson()                 |
+| : `pextobenan`                | ->toBeNan()                  |
+| : `pextobenull`               | ->toBeNull()                 |
+| : `pextohavekey`              | ->toHaveKey()                |
+| : `pextohavekeys`             | ->toHaveKeys()               |
+| : `pextohavelength`           | ->toHaveLength()             |
+| : `pextobefile`               | ->toBeFile()                 |
+| : `pextobedirectory`          | ->toBeDirectory()            |
+| : `pextobereadabledirectory`  | ->toBeReadableDirectory()    |
+| : `pextobereadablefile`       | ->toBeReadableFile()         |
+| : `pextobewritabledirectory`  | ->toBeWritableDirectory()    |
+| : `pextobewritablefile`       | ->toBeWritableFile()         |
+| : `pextostartwith`            | ->toStartWith()              |
+| : `pextothrow`                | ->toThrow()                  |
+| : `pextoendwith`              | ->toEndWith()                |
+| : `pextomatch`                | ->toMatch()                  |
+| : `pextomatchconstraint`      | ->toMatchConstraint()        |
+| : `pexdd`                     | ->dd()                       |
+| : `pexray`                    | ->ray()                      |
+| : `pexjson`                   | ->json()->                   |
+| : `pexand`                    | ->and()->                    |
+| : `pexnot`                    | ->not()->                    |
+| : `pexdef`                    | ->defer()->                  |
+| : `pexeach`                   | ->each()->                   |
+| : `pexsequence`               | ->sequence()                 |
+| : `pexwhen`                   | ->when()                     |
+| : `pexunless`                 | ->unless()                   |
+| : `pexunless`                 | ->unless()                   |
